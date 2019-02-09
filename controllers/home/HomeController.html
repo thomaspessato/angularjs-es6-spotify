@@ -1,0 +1,52 @@
+<style>
+    .music-thumbnail {
+        height: 135px;
+        width: 135px;
+        min-width: 135px;
+        background-color: black;
+        margin-right: 5px;
+    }
+
+    .music-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .music-thumbnail img {
+        width: 100%;
+        object-fit: contain;
+        height: 100%;
+    }
+
+    .music-container {
+        display: flex;
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .music-info-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .music-name {
+        font-size: 25px;
+    }
+</style>
+
+<div ng-controller="HomeController as ctrl">
+
+    <h1>Made for you</h1>
+    <ul class="music-list">
+        <li class="music-container" ng-repeat="music in ctrl.featuredMusic">
+            <div class="music-thumbnail">
+                <img src="{{music.thumbnail}}" alt="">
+            </div>
+            <div class="music-info-container">
+                <a class="music-name" href="#/music/{{music.name}}">{{music.name}}</a>
+                <a class="music-author" href="#/author/{{music.author}}">{{music.author}}</a>
+                <p>{{music.description}}</p>
+            </div>
+        </li>
+    </ul>
+</div>

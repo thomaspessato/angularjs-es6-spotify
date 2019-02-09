@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Spotify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="app.css" />
+    <link rel="stylesheet" href="./directives/navbar/navbar.directive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="app.js"></script>
+    <script src="./models/User.js"></script>
+    <script src="./controllers/home/HomeController.js"></script>
+    <script src="./directives/navbar/navbar.directive.js"></script>
+    <script src="./directives/sidebar/sidebar.directive.js"></script>
+    <script src="./services/BaseService.js"></script>
+    <script src="./services/MusicService.js"></script>
+    <script src="./services/UserService.js"></script>
+</head>
+<body>
+    <navbar></navbar>
+    <sidebar></sidebar>
+    <ui-view></ui-view>
+</body>
+</html>

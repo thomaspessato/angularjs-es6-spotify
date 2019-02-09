@@ -1,0 +1,30 @@
+<style>
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 230px;
+        box-shadow: 1px 1px 10px -3px black;
+        background-color: white;
+        transition: left 300ms ease;
+    }
+
+    .sidebar.hidden {
+        left: -300px;
+    }
+</style>
+<aside class="sidebar" ng-class="{'hidden': sidebarVisibility == 'hidden'}">
+    <button ng-click="hideSidebar()">hide</button>
+    <button ng-click="openSidebar()">open</button>
+    {{sidebarVisibility}}
+    <div>
+        <span>Hello User</span>
+    </div>
+    <h2>Your information</h2>
+    <ul>
+        <li ng-repeat="(infoName, value) in userInfo">
+            {{infoName}} - {{value}}
+        </li>
+    </ul>
+</aside>

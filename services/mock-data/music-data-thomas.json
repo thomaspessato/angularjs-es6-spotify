@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Wilderness",
+        "author": "Matt Willmann",
+        "duration": "2:36",
+        "description":"Excepteur ut aliquip sint Lorem in nulla aliqua laborum qui nisi consectetur anim elit id.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Diablo_II_Soundtrack.jpg/220px-Diablo_II_Soundtrack.jpg",
+        "rating": "5",
+        "relevance": 4
+    },
+    {
+        "name": "Pride",
+        "author": "U2",
+        "duration": "3:36",
+        "description": "Excepteur ut aliquip sint Lorem in nulla aliqua laborum qui nisi consectetur anim elit id.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Pride_%28In_the_Name_of_Love%29_%28U2_single%29_coverart.jpg/220px-Pride_%28In_the_Name_of_Love%29_%28U2_single%29_coverart.jpg",
+        "rating": "4",
+        "relevance": 3
+    },
+    {
+        "name": "Closer To The Heart",
+        "author": "Rush",
+        "description": "Excepteur ut aliquip sint Lorem in nulla aliqua laborum qui nisi consectetur anim elit id.",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a6/Closer_to_the_Heart.jpg/220px-Closer_to_the_Heart.jpg",
+        "duration": "5:06",
+        "rating": "5",
+        "relevance": 4
+    }
+]
